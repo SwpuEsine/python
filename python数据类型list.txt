@@ -1,0 +1,42 @@
+1 python 数据类型		list 是一个有序的列表  与java中的list 相似
+
+只不过python中的list 可以在开始的时候给予初始值
+
+classmates = ['Michael', 'Bob', 'Tracy']  len(classmates)  classmates[0]
+
+classmates[-1]  这个表示倒数第一个
+
+classmates.append('Adam')
+
+classmates.insert(1, 'Jack') 
+
+classmates.pop()// 删除末尾元素
+
+classmates.pop(1) 删除指定位置的元素
+
+L = ['Apple', 123, True]// list中的元素类型也可以不同
+
+>>> L = []
+>>> len(L)
+0
+
+
+tuple   元祖    另一种有序列表叫元组：tuple。tuple和list非常类似，
+但是tuple一旦初始化就不能修改
+
+元素内容不可以修改  长度不可以修改  t = (1, 2) 
+>>> t = (1)
+>>> t
+1
+>>> t = (1,)
+>>> t
+(1,)
+
+
+>>> t = ('a', 'b', ['A', 'B'])
+>>> t[2][0] = 'X'
+>>> t[2][1] = 'Y'
+>>> t
+('a', 'b', ['X', 'Y'])   ['a','b']  tuple 元素的内容不变指的是指向不会变
+
+但是指向内的内容可以变
