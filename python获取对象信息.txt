@@ -1,0 +1,27 @@
+当我们拿到一个对象的引用时，如何知道这个对象是什么类型、有哪些方法呢？
+
+使用type()
+
+>>> type(123)
+<class 'int'>
+>>> type('str')
+<class 'str'>
+>>> type(None)
+<type(None) 'NoneType'>
+
+但是type()函数返回的是什么类型呢？它返回对应的Class类型。
+如果我们要在if语句中判断，就需要比较两个变量的type类型是否相同：
+
+
+>>> type(123)==type(456)
+True
+>>> type(123)==int
+True
+>>> type('abc')==type('123')
+True
+>>> type('abc')==str
+True
+>>> type('abc')==type(123)
+False
+
+

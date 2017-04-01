@@ -1,0 +1,23 @@
+>>> list(map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
+[1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+通过对比可以看出，匿名函数lambda x: x * x实际上就是：
+
+def f(x):
+    return x * x
+	
+	匿名函数有个限制，就是只能有一个表达式，不用写return，返回值就是该表达式的结果。
+	
+	
+	>>> f = lambda x: x * x
+	>>> f
+	<function <lambda> at 0x101c6ef28>
+	>>> f(5)
+	25
+
+
+	def build(x, y):
+		return lambda: x * x + y * y
+		
+		
+	
