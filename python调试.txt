@@ -1,0 +1,35 @@
+------------------------------------------print-------------------------------------------------
+打印调试输出------------------------------------------------
+断言--------------------------------------------------------
+
+凡是用print()来辅助查看的地方，都可以用断言（assert）来替代：
+
+
+def foo(s):
+    n = int(s)
+    assert n != 0, 'n is zero!'
+    return 10 / n
+
+def main():
+    foo('0')
+	
+	
+	
+$ python3 err.py
+Traceback (most recent call last):
+  ...
+AssertionError: n is zero!
+
+程序中如果到处充斥着assert，和print()相比也好不到哪去。
+不过，启动Python解释器时可以用-O参数来关闭assert：
+
+
+
+$ python3 -O err.py
+Traceback (most recent call last):
+  ...
+ZeroDivisionError: division by zero
+
+/***************************************************logging*************************************************/
+
+

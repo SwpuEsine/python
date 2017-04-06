@@ -1,0 +1,50 @@
+--------------------------------------------------datetime-------------------------------------------------------
+
+datetime是Python处理日期和时间的标准库。
+
+----------------------------------------------获取当前日期和时间-------------------------------------------------
+
+>>> from datetime import datetime
+>>> now = datetime.now() # 获取当前datetime
+>>> print(now)
+2015-05-18 16:28:07.198690
+>>> print(type(now))
+<class 'datetime.datetime'>
+
+注意到datetime是模块，datetime模块还包含一个datetime类，
+通过from datetime import datetime导入的才是datetime这个类。
+
+如果仅导入import datetime，则必须引用全名datetime.datetime。
+
+datetime.now()返回当前日期和时间，其类型是datetime。
+
+-------------------------------------------------获取指定日期和时间--------------
+>>> from datetime import datetime
+>>> dt = datetime(2015, 4, 19, 12, 20) # 用指定日期时间创建datetime
+>>> print(dt)
+2015-04-19 12:20:00
+
+timestamp转换为datetime
+
+注意到timestamp是一个浮点数，它没有时区的概念，而datetime是有时区的。上述转换是在timestamp和本地时间做转换。
+
+很多编程语言起源于UNIX系统，而UNIX系统认为1970年1月1日0点是时间纪元，
+所以我们常说的UNIX时间戳是以1970年1月1日0点为计时起点时间的。
+
+而此刻的格林威治标准时间与北京时间差了8小时，也就是UTC+0:00时区的时间应该是：
+
+
+--------------------------------------------str转换为datetime---------------------------
+
+
+>>> from datetime import datetime
+>>> cday = datetime.strptime('2015-6-1 18:19:59', '%Y-%m-%d %H:%M:%S')
+>>> print(cday)
+2015-06-01 18:19:59
+
+
+
+>>> from datetime import datetime
+>>> now = datetime.now()
+>>> print(now.strftime('%a, %b %d %H:%M'))
+Mon, May 05 16:28

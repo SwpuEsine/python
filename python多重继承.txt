@@ -1,0 +1,35 @@
+-----------------------------------------------多重继承----------------------------------------------------------
+	1 继承是面向对象编程的一个重要的方式，因为通过继承，子类就可以扩展父类的功能。
+	
+class Runnable(object):
+    def run(self):
+        print('Running...')
+
+class Flyable(object):
+    def fly(self):
+        print('Flying...')
+		
+		
+		class Animal(object):
+    pass
+
+# 大类:
+class Mammal(Animal):
+    pass
+
+	
+--------------------------------------------多重继承就是括号后面多一个选择----------------------------------------
+
+class Dog(Mammal, Runnable):
+    pass
+	
+
+
+	
+------------------------------------------我们把Runnable和Flyable改为RunnableMixIn和FlyableMixIn---------------
+
+多重继承就是把 类的名字后面加上MixIn, 这样可以混入
+
+class MyTCPServer(TCPServer, ForkingMixIn):
+    pass
+
