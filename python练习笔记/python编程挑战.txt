@@ -1,0 +1,81 @@
+1、join()函数
+语法： ‘sep’.join(seq)
+上面的语法即：以sep作为分隔符，将seq所有的元素合并成一个新的字符串
+返回值：返回一个以分隔符sep连接各个元素后生成的字符串
+
+print(a[::2]) 切片
+
+python 中的for  i in range(m,n)
+
+相当于 for(int i =m;i<n;i++){
+
+
+}
+
+
+r'\\\'  这是默认都不转义
+
+
+python 有两种除法    一种是/ 整除  这种是精确的   即使9/3 也得出3.0
+
+一种是//地板除     这种永远是正数  10//3=3  10%3=1
+
+字符串编码  为了兼容各国的编码  有了unicode  但是为了节省空间  有了utf-8
+
+print(遇见,会打印一个空格)
+
+range 可以生成一个连续的整数序列
+
+再通过list 可以转换为list
+
+
+for i in range(6) 表示从0开始到5
+
+默认参数指向不变对象
+
+def test(L=none):
+	python 中 /是精确的   10/3 会是小数  这和java中不一样
+	
+	要得到浮点数  要使用10//3
+	
+	python 中交换两个变量的值   a,b=b,a   就可以了
+	
+
+不借助第三个变量  实现两个变量的交换
+
+5L2
+ 2L1
+  0L1
+
+
+num2 = 0
+num5 = 0
+for i in L:
+    while i % 2 ==0:
+        num2 += 1
+        i //= 2
+    while i % 5 ==0:
+        num5 += 1
+        i //= 5
+print(min(num2,num5))
+
+求出list中L中所有数的乘机 并求出尾数0的个数
+
+r=r if r else 1
+
+如果r为0 则0 否则为1
+
+101  5
+
+count=0
+while a!=1:
+    count+=a%2
+    a=a//2
+count+=1
+print count  	循环来计算 二进制数中1的个数
+
+
+// 字符串也是可迭代对象
+
+
+

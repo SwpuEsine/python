@@ -1,0 +1,25 @@
+比如，我们已经编写了一个名为Animal的class，有一个run()方法可以直接打印：
+
+class Animal(object):
+    def run(self):
+        print('Animal is running...')
+		
+		当我们需要编写Dog和Cat类时，就可以直接从Animal类继承：
+		
+		class Dog(Animal):
+    pass
+
+class Cat(Animal):
+    pass
+	
+	
+	a = list() # a是list类型
+b = Animal() # b是Animal类型
+c = Dog() # c是Dog类型
+
+>>> isinstance(a, list)
+True
+>>> isinstance(b, Animal)
+True
+>>> isinstance(c, Dog)
+True

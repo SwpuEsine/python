@@ -1,0 +1,23 @@
+
+>>> s = "xxxxx"
+>>> list(s)
+['x', 'x', 'x', 'x', 'x']
+>>> tuple(s)
+('x', 'x', 'x', 'x', 'x')
+>>> tuple(list(s))
+('x', 'x', 'x', 'x', 'x')
+>>> list(tuple(s))
+['x', 'x', 'x', 'x', 'x']
+
+
+
+>>> "".join(tuple(s))
+'xxxxx'
+>>> "".join(list(s))
+'xxxxx'
+>>> str(tuple(s))
+"('x', 'x', 'x', 'x', 'x')"
+>>> 
+
+
+x.keys()[0]每次都一样吗

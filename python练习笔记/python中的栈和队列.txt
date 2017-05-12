@@ -1,0 +1,15 @@
+1 使用List可以作为栈和队列来使用
+  广度优先搜索一般是使用队列来做   而深度优先搜索是使用递归来实现的
+  c=[1,2,'3']
+
+print(len(c))
+
+print(c[-1])
+c.append('test')
+print(c)
+c.pop()
+print(c)
+
+一般使用append和pop 是可以来实现栈的
+
+但是队列的实现  要使用append 和pop(0) 来实现

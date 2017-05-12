@@ -1,0 +1,5 @@
+print ("His name is %s"%("Aviad"))
+
+print ("He is %d years old"%(25))
+
+print ("His height is %.2f m"%(1.83))
